@@ -1,0 +1,27 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.logo {
+  padding-top: 50px;
+  span {
+    display: block;
+    font-size: 6rem;
+    line-height: 1em;
+    font-family: 'Archivo Black', sans-serif;
+    border-left: 1.3rem solid #000;
+    padding-left: 20px;
+    @media #{$tablet-down} {
+      font-size: 4rem;
+      border-left-width: .9rem;
+    }
+    @media #{$tablet-down} {
+      font-size: 3rem;
+      border-left-width: .75rem;
+    }
+    @media #{$small-phone-down} {
+      font-size: 2.5rem;
+      border-left-width: .6rem;
+      padding-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.section {
+  max-height: calc(100vh - 40px);
+  padding: 20px 0px;
+}
+
+.section:first-of-type {
+  max-height: calc(100vh - 64px);
+}
