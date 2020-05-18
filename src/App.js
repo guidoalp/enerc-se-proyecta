@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Helmet title="2' ENERC SE PROYECTA" />
       <Header />
-      <Section>
+      <Section maxWidth="false">
         <div className="logo">
           <span>2'</span>
           <span>ENERC</span>

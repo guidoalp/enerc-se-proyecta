@@ -2,25 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 .logo {
-  padding-top: 50px;
+  position: absolute;
+  bottom: 34px;
+  border-left: 2vw solid #000;
+  font-size: 10vw;
+  line-height: .8;
+  @media #{$tablet-down} {
+    font-size: 13vw;
+    border-left-width: 3vw;
+  }
+  @media #{$small-phone-down} {
+    font-size: 2.5rem;
+    border-left-width: .8rem;
+  }
   span {
     display: block;
-    font-size: 6rem;
-    line-height: 1em;
-    font-family: 'Archivo Black', sans-serif;
-    border-left: 1.3rem solid #000;
+    font-family: "Archivo Black",sans-serif;
     padding-left: 20px;
+    margin-bottom: .6rem;
     @media #{$tablet-down} {
-      font-size: 4rem;
-      border-left-width: .9rem;
+      margin-bottom: 1.2rem;
     }
-    @media #{$tablet-down} {
-      font-size: 3rem;
-      border-left-width: .75rem;
-    }
-    @media #{$small-phone-down} {
-      font-size: 2.5rem;
-      border-left-width: .6rem;
+    @media #{$phone-down} {
+      margin-bottom: .9rem;
       padding-left: 15px;
     }
   }
