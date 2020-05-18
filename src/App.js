@@ -13,7 +13,7 @@ function App() {
         <meta charSet="utf-8" />
         <title>2' ENERC SE PROYECTA</title>
         <link rel="canonical" href="https://enercseproyecta.com.ar" />
-        <meta name="description" content="Festival organizado integramente por alumnes de la Escuela Nacional de Experimentación y Realización Cinematográfica" />
+        <meta name="description" content="Festival organizado integramente por alumnes de la Escuela Nacional de Experimentación y Realización Cinematográfica." />
       </Helmet>
       <Header />
       <Section maxWidth="false">
