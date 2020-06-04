@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Helmet} from 'react-helmet';
 import {Header} from './components/header/header.component';
 import {Section} from './components/section/section.component';
-import {Programacion} from './components/programacion/programacion.component';
 import Favicon from './assets/images/favicon.png';
 
 import './scss/App.scss';
@@ -52,7 +51,6 @@ class App extends Component {
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Programación</h2>
-          <Programacion />
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Sponsors</h2>
