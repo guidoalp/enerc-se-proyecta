@@ -5,7 +5,6 @@ import './section.styles.css';
 export const Section = (props) => (
   <section className="section">
     <Container maxWidth={props.maxWidth}>
-      {console.log(props.maxWidth)}
       {props.children}
     </Container>
   </section>
