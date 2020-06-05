@@ -1,34 +1,21 @@
+
 @import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
 
 h1, h2 {
   font-family: "Archivo Black",sans-serif;
 }
 
-/* SECTION */
-.section {
-  min-height: calc(100vh);
-  border-bottom: solid 1px #e8e8e8;
-  @media #{$tablet-down} {
-    min-height: unset;
-  }
-  &:first-of-type {
-    height: calc(100vh - 64px);
-  }
-  h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    @media #{$tablet-down} {
-      font-size: 2.5rem;
-    }
-  }
-}
 
 /* Logo Big */
 .logo {
   position: absolute;
-  bottom: 35px;
+  bottom: 30px;
   border-left: 2vw solid #000;
   font-size: 10vw;
   line-height: .74;
@@ -52,11 +39,34 @@ h1, h2 {
       margin-bottom: 1.2rem;
     }
     @media #{$phone-down} {
-      margin-bottom: .9rem;
+      margin-bottom: .6rem;
       padding-left: 15px;
     }
   }
 }
+
+/* SECTION */
+.section {
+  min-height: calc(100vh);
+  border-bottom: solid 1px #e8e8e8;
+  position: relative;
+  &:first-of-type {
+    height: calc(100vh - 64px);
+    .logo {
+      bottom: 100px;
+    }
+  }
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    @media #{$tablet-down} {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+
 
 .streaming-player {
   position: relative;

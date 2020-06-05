@@ -3,8 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 import './header-menu.styles.css';
 
@@ -29,10 +28,10 @@ export default function HeaderMenu() {
   return (
     <div className={classes.root}>
       <AppBar position="static" style={{ background: '#FFF' }}  elevation={0}>
-        <Toolbar>
-          <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon fontSize="large" />
-          </IconButton>
+        <Toolbar width="100%" style={{ justifyContent: 'flex-end' }}>
+        <a href="https://instagram.com/enercseproyecta" rel="noopener noreferrer" target="_blank">
+          <InstagramIcon fontSize="large" style={{ color: '#000' }} align="right" />
+        </a>
         </Toolbar>
       </AppBar>
     </div>
