@@ -1,0 +1,9 @@
+.dia {
+  margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+  .dia:nth-child(odd) {
+    /* border-right: solid 2px #7a7a7a; */
+  }
+}

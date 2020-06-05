@@ -1,0 +1,14 @@
+.programa .informacion-principal {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.programa .categoria {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin-left: 85px;
+}
+
+
+.programa {
+  margin-bottom: 5px;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Helmet} from 'react-helmet';
 import {Header} from './components/header/header.component';
 import {Section} from './components/section/section.component';
+import {Programacion} from './components/programacion/programacion.component';
 import Favicon from './assets/images/favicon.png';
 
 import './scss/App.scss';
@@ -22,6 +23,17 @@ class App extends Component {
   }
 
   render() {
+
+    var groupBy = function(xs, key) {
+      return xs.reduce(function(rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+      }, {});
+    };
+
+    const { programacion } = this.state;
+    const filteredProgramacion = groupBy(programacion, 'fecha');
+    
     return (
       <div className="App">
         <Helmet>
@@ -51,6 +63,7 @@ class App extends Component {
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Programación</h2>
+          <Programacion programacion = {filteredProgramacion} />
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Sponsors</h2>
