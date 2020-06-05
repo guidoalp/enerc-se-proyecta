@@ -54,6 +54,9 @@ h1, h2 {
     height: calc(100vh - 64px);
     .logo {
       bottom: 100px;
+      @media #{$phone-down} {
+        bottom: 150px;
+      }
     }
   }
   h2 {
