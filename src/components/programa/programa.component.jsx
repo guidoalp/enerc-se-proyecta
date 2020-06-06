@@ -15,12 +15,22 @@ function checkVivo(dia, hora, duracion) {
   return res;
 }
 
+function programaInfo(tipo, direccion, duracion) {
+  var res;
+  if (tipo === 'Charlas' || tipo === 'charlas') {
+    res = ' por ' + direccion;
+  } else {
+    res = ' de ' + direccion + ' | ' + duracion + '\'';
+  }
+  return res;
+}
+
 export const Programa = (props) => (
   <div className={ 'programa' + checkVivo(props.programa.dia, props.programa.horario, props.programa.duracion) }>
     <div className="informacion-principal">
       <span className="hora">{moment(props.programa.horario, "HH:mm:ss").format("HH:mm") + "hs | "}</span>
       <span className="titulo-duracion">
-        {props.programa.titulo } { ' de ' + props.programa.direccion + ' | ' } { props.programa.duracion + '\''}
+        {props.programa.titulo } {programaInfo(props.programa.tipo, props.programa.direccion, props.programa.duracion)}
       </span>
     </div>
     <div className="categoria">

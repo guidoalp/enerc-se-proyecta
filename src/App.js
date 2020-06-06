@@ -14,7 +14,6 @@ class App extends Component {
 
     this.state = {
       filteredProgramacion: [],
-      vivo: 0,
       time: 0,
     };
   }
@@ -22,7 +21,7 @@ class App extends Component {
   groupBy (xs, key) {
     return xs.reduce(function(rv, x) {
       (rv[x[key]] = rv[x[key]] || []).push(x);
-      return rv;
+        return rv;
     }, {});
   };
   
@@ -70,12 +69,6 @@ class App extends Component {
         <Section className="border-bottom" maxWidth="lg">
           <h2>Programación</h2>
           <Programacion programacion = {this.state.filteredProgramacion} />
-        </Section>
-        <Section className="border-bottom" maxWidth="lg">
-          <h2>Sponsors</h2>
-        </Section>
-        <Section className="border-bottom" maxWidth="lg">
-          <h2>Equipo</h2>
         </Section>
       </div>
     );
