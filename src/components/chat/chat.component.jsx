@@ -3,6 +3,6 @@ import './chat.styles.css';
 
 export const Chat = (props) => (
   <div className="chat">
-    <iframe src="https://www.youtube.com/live_chat?v=tSVsHthq9Ws&embed_domain=localhost" frameBorder="0" title="chat" width="100%" height="500"></iframe>
+    <iframe src="https://www.youtube.com/live_chat?v=tSVsHthq9Ws&embed_domain=enercseproyecta.com.ar" frameBorder="0" title="chat" width="100%" height="500"></iframe>
   </div>
 );
