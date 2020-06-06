@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {Helmet} from 'react-helmet';
+
 import {Header} from './components/header/header.component';
 import {Section} from './components/section/section.component';
 import {Programacion} from './components/programacion/programacion.component';
-import Favicon from './assets/images/favicon.png';
 
+import Favicon from './assets/images/favicon.png';
 import './scss/App.scss';
 
 class App extends Component {
@@ -12,28 +13,33 @@ class App extends Component {
     super();
 
     this.state = {
-      programacion: []
+      filteredProgramacion: [],
+      vivo: 0,
+      time: 0,
     };
   }
+
+  groupBy (xs, key) {
+    return xs.reduce(function(rv, x) {
+      (rv[x[key]] = rv[x[key]] || []).push(x);
+      return rv;
+    }, {});
+  };
+  
 
   componentDidMount() {
     fetch("./data/programacion.json")
       .then((response) => response.json())
-      .then((programacion) => this.setState({ programacion: programacion }));
+      .then((programacion) => this.setState({ filteredProgramacion : this.groupBy(programacion, 'dia') }));
+
+      this.interval = setInterval(() => this.setState({ time: Date.now() }), 6000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   render() {
-
-    var groupBy = function(xs, key) {
-      return xs.reduce(function(rv, x) {
-        (rv[x[key]] = rv[x[key]] || []).push(x);
-        return rv;
-      }, {});
-    };
-
-    const { programacion } = this.state;
-    const filteredProgramacion = groupBy(programacion, 'fecha');
-    
     return (
       <div className="App">
         <Helmet>
@@ -55,7 +61,7 @@ class App extends Component {
         <Section className="border-bottom" maxWidth="lg">
           <h2>Ver</h2>
           <div className="streaming-player">
-            <iframe width="100%" height="600" title="streaming-player" className="streaming-player" src="https://www.youtube.com/embed/E4gjFgY0kVQ?rel=0&showinfo=0&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="600" title="streaming-player" className="streaming-player" src="http://www.youtube.com/embed/fRZuJPjLCQs?rel=0&showinfo=0&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </Section>
         <Section className="border-bottom" maxWidth="lg">
@@ -63,7 +69,7 @@ class App extends Component {
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Programación</h2>
-          <Programacion programacion = {filteredProgramacion} />
+          <Programacion programacion = {this.state.filteredProgramacion} />
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Sponsors</h2>
