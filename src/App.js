@@ -43,7 +43,7 @@ class App extends Component {
         <Section className="border-bottom" maxWidth="lg">
           <h2>Ver</h2>
           <div className="streaming-player">
-            <iframe width="100%" height="600" title="streaming-player" className="streaming-player" src="https://www.youtube.com/embed/E4gjFgY0kVQ?rel=0&showinfo=0&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="600" title="streaming-player" className="streaming-player" src="https://www.youtube.com/embed/tSVsHthq9Ws?rel=0&showinfo=0&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </Section>
         <Section className="border-bottom" maxWidth="lg">
