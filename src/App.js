@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 import {Helmet} from 'react-helmet';
+
 import {Header} from './components/header/header.component';
 import {Section} from './components/section/section.component';
+import {Programacion} from './components/programacion/programacion.component';
 import {Chat} from './components/chat/chat.component';
-import Favicon from './assets/images/favicon.png';
 
+import Favicon from './assets/images/favicon.png';
 import './scss/App.scss';
 
 class App extends Component {
@@ -13,14 +15,29 @@ class App extends Component {
     super();
 
     this.state = {
-      programacion: []
+      filteredProgramacion: [],
+      time: 0,
     };
   }
+
+  groupBy (xs, key) {
+    return xs.reduce(function(rv, x) {
+      (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+    }, {});
+  };
+  
 
   componentDidMount() {
     fetch("./data/programacion.json")
       .then((response) => response.json())
-      .then((programacion) => this.setState({ programacion: programacion }));
+      .then((programacion) => this.setState({ filteredProgramacion : this.groupBy(programacion, 'dia') }));
+
+      this.interval = setInterval(() => this.setState({ time: Date.now() }), 6000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   render() {
@@ -54,12 +71,7 @@ class App extends Component {
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Programación</h2>
-        </Section>
-        <Section className="border-bottom" maxWidth="lg">
-          <h2>Sponsors</h2>
-        </Section>
-        <Section className="border-bottom" maxWidth="lg">
-          <h2>Equipo</h2>
+          <Programacion programacion = {this.state.filteredProgramacion} />
         </Section>
       </div>
     );
