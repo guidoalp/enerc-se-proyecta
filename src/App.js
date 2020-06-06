@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+
 import {Helmet} from 'react-helmet';
 
 import {Header} from './components/header/header.component';
 import {Section} from './components/section/section.component';
 import {Programacion} from './components/programacion/programacion.component';
+import {Chat} from './components/chat/chat.component';
 
 import Favicon from './assets/images/favicon.png';
 import './scss/App.scss';
@@ -60,11 +62,12 @@ class App extends Component {
         <Section className="border-bottom" maxWidth="lg">
           <h2>Ver</h2>
           <div className="streaming-player">
-            <iframe width="100%" height="600" title="streaming-player" className="streaming-player" src="http://www.youtube.com/embed/fRZuJPjLCQs?rel=0&showinfo=0&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="100%" height="600" title="streaming-player" className="streaming-player" src="https://www.youtube.com/embed/tSVsHthq9Ws?rel=0&showinfo=0&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Chat</h2>
+          <Chat />
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Programación</h2>
