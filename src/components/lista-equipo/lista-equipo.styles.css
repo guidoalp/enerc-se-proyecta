@@ -1,0 +1,25 @@
+.lista-equipo {
+  margin-bottom: 70px;
+}
+
+.rol h3 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.rol p {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+  .rol h3 {
+    font-size: 1.4em;
+  }
+  .rol p {
+    font-size: 1.1em;
+  }
+}

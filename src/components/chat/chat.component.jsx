@@ -3,6 +3,12 @@ import './chat.styles.css';
 
 export const Chat = (props) => (
   <div className="chat">
-    <iframe src="https://www.youtube.com/live_chat?v=owuu2ZJnPwI&embed_domain=enercseproyecta.com.ar" frameBorder="0" title="chat" width="100%" height="500"></iframe>
+    <iframe title="streaming-chat" frameBorder="0"
+        scrolling="true"
+        id="prensacenerc"
+        src="https://www.twitch.tv/embed/prensacenerc/chat?parent=enercseproyecta.com.ar"
+        height="500"
+        width="100%">
+    </iframe>
   </div>
 );

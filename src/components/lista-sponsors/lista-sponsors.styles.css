@@ -1,0 +1,10 @@
+.lista-sponsors .sponsor img {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .lista-sponsors .sponsor {
+    padding: 10px 20px;
+  }  
+}
