@@ -1,10 +1,14 @@
 .programacion {
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   grid-column-gap: 30px;
-  grid-row-gap: 50px;
+  grid-row-gap: 10px;
+}
+
+.MuiAccordion-root{
+  width: 90%;
 }
 
 .programacion h2 {
