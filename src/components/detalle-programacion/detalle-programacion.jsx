@@ -10,11 +10,18 @@ export const Detalle = ({ item }) => {
         return item.Invitado ? true : false;
     }
 
+    const direccion = () => {
+        return item.direccion ? true : false;
+    }
+    const lugar = () => {
+        return item.lugar ? true : false;
+    }
+
     return(
         <div>
             <div className='detalle'>
                 {item.hora} | {item.titulo}{autor() ? `, de ${item.autor}` : ""}{invitado() ? `, con ${item.Invitado}` : ""}
-                <div className='tipo'>{item.tipo}</div>
+                <div className='tipo'>{item.tipo} {direccion() ? `| ${item.direccion}` : ""} {lugar() ? `| ${item.lugar}` : ""}</div>
             </div>
         </div>
     )

@@ -65,14 +65,6 @@ class App extends Component {
     }
   }
 
-  /*componentDidMount() {
-    fetch("./data/programacion.json")
-      .then((response) => response.json())
-      .then((programacion) => this.setState({ filteredProgramacion : this.groupBy(programacion, 'dia') }, this.setState({'programacion' : programacion}), this.setVivo(programacion)));
-
-      this.interval = setInterval(() => this.updateVivo(), 6000);
-  }*/
-
   render() {
     return (
       <div className="App">
@@ -84,7 +76,7 @@ class App extends Component {
           <link rel="icon" type="image/png" href={Favicon} sizes="16x16" />
         </Helmet>
         <Header />
-        <Section maxWidth="xl">
+        <Section maxWidth="xl"  clase="seccion-logo">
           <div className="logo">
             <span>3°</span>
             <span>ENERC</span>

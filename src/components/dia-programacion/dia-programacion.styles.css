@@ -2,7 +2,14 @@
   margin-left: 85px;
   padding-left: 25px;
   font-family: "Archivo Black", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  height: 10vh;
+}
+
+.MuiAccordionSummary-content{
+  color: #e8e8e8;
+  text-shadow: 1px 1px 1px black;
+
 }
 
 .MuiAccordionDetails-root{
@@ -19,7 +26,7 @@
   background-color: #f0bdb5 !important;
 }
 .dia-Cuyo{
-  background-color: #e624a0 !important;
+  background-color: #fafae0 !important;
 }
 .dia-Patagonia{
   background-color: #945e9f !important;
@@ -28,10 +35,10 @@
   background-color: #a3b0e6 !important;
 }
 .dia-Rosario{
-  background-color: #945e9f !important;
+  background-color: #505388 !important;
 }
 .dia-Comodoro{
-  background-color: #945e9f !important;
+  background-color: #ce86af !important;
 }
 
 .dia h2 {

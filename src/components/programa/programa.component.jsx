@@ -7,7 +7,10 @@ export const Programa = ({ fecha, data }) => {
   
   const filteredData = data.filter(item => item.fecha === fecha);
 
+  const existeFecha = filteredData.length > 0;
+
   return(
+    existeFecha && (
     <AccordionDetails className='programa-seccion'>
       <div className='fecha'>
         | {fecha}
@@ -16,5 +19,6 @@ export const Programa = ({ fecha, data }) => {
         <Detalle key={item.id} item={item} />
         ))}
     </AccordionDetails>
+    )
   )
 };
