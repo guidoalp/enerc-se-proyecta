@@ -1,18 +1,25 @@
 .detalle{
     margin-bottom: 15px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     font-size: 0.9rem;
     color: #7a7a7a;
     text-indent: -4em;
     padding-left: 5.2em !important;
 }
-
+.detalle::selection{
+    color: #e624a0;
+}
 
 .tipo{
-    font-family: "Lato",sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 15px;
-    margin-left: 58px;
+    margin-left: 50px;
     margin-top: 3px;
+}
+.tipo::selection{
+    color: #e624a0;
 }
 
 @media (max-width: 425px){
@@ -21,7 +28,8 @@
             padding-left: 4em !important;
         }
         .tipo{
-            font-family: "Lato",sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
             font-size: 15px;
             margin-top: 3px;
             margin-left: 0px;

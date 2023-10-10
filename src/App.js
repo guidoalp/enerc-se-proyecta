@@ -88,13 +88,12 @@ class App extends Component {
           <h2>Programación</h2>
           <Programacion />
         </Section>
-        <Section className="border-bottom">
-          <h2>Sponsors</h2>
-          <ListaSponsors />
-        </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Equipo</h2>
           <ListaEquipo />
+        </Section>
+        <Section className="border-bottom" clase="seccion-sponsors">
+          <ListaSponsors />
         </Section>
       </div>
     );

@@ -1,7 +1,10 @@
 .fecha{
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 15px;
   text-transform: uppercase;
-  
+}
+.fecha::selection{
+  color: #e624a0;
 }
