@@ -6,10 +6,8 @@ import moment from 'moment';
 import {Header} from './components/header/header.component';
 import {Section} from './components/section/section.component';
 import {Programacion} from './components/programacion/programacion.component';
-import {Chat} from './components/chat/chat.component';
 import ListaSponsors from './components/lista-sponsors/lista-sponsors.component';
 import ListaEquipo from './components/lista-equipo/lista-equipo.component';
-import PlayingInfo from './components/playing-info/playing-info.component';
 
 import Favicon from './assets/images/favicon.png';
 import './scss/App.scss';
@@ -67,55 +65,35 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch("./data/programacion.json")
-      .then((response) => response.json())
-      .then((programacion) => this.setState({ filteredProgramacion : this.groupBy(programacion, 'dia') }, this.setState({'programacion' : programacion}), this.setVivo(programacion)));
-
-      this.interval = setInterval(() => this.updateVivo(), 6000);
-  }
-
   render() {
     return (
       <div className="App">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>2' ENERC SE PROYECTA | Edición Online | 2020</title>
+          <title>3° ENERC SE PROYECTA | Edición Online | 2023</title>
           <link rel="canonical" href="https://enercseproyecta.com.ar" />
           <meta name="description" content="Festival organizado integramente por alumnes de la Escuela Nacional de Experimentación y Realización Cinematográfica." />
           <link rel="icon" type="image/png" href={Favicon} sizes="16x16" />
         </Helmet>
         <Header />
-        <Section maxWidth="xl">
+        <Section maxWidth="xl"  clase="seccion-logo">
           <div className="logo">
-            <span>2’</span>
+            <span>3°</span>
             <span>ENERC</span>
             <span>SE</span>
             <span>PROYECTA</span>
           </div>
         </Section>
         <Section className="border-bottom" maxWidth="lg">
-          <h2>Ver</h2>
-          <div className="streaming-player">
-            <iframe className="streaming-player" title="streaming-player" src="https://player.twitch.tv/?channel=prensacenerc&parent=enercseproyecta.com.ar&autoplay=false" frameBorder="0" allowFullScreen={true} scrolling="no" height="600" width="100%"></iframe>
-          </div>
-          <PlayingInfo programa={this.state.vivo} />
-        </Section>
-        <Section className="border-bottom" maxWidth="lg">
-          <h2>Chat</h2>
-          <Chat />
-        </Section>
-        <Section className="border-bottom" maxWidth="lg">
           <h2>Programación</h2>
-          <Programacion programacion={this.state.filteredProgramacion} />
-        </Section>
-        <Section className="border-bottom" maxWidth="lg">
-          <h2>Sponsors</h2>
-          <ListaSponsors />
+          <Programacion />
         </Section>
         <Section className="border-bottom" maxWidth="lg">
           <h2>Equipo</h2>
           <ListaEquipo />
+        </Section>
+        <Section className="border-bottom" clase="seccion-sponsors">
+          <ListaSponsors />
         </Section>
       </div>
     );

@@ -1,11 +1,26 @@
 .programacion {
-  margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  grid-template-columns: 1fr;
   justify-items: center;
   grid-column-gap: 30px;
-  grid-row-gap: 50px;
 }
+
+.MuiAccordion-root{
+  width: 100%;
+  padding: 0 !important;
+}
+
+.MuiAccordionSummary-root{
+  min-height: 72px;
+}
+
+.MuiAccordionDetails-root{
+  min-height: 72px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 
 .programacion h2 {
   text-align: left !important;
@@ -15,5 +30,9 @@
 @media (max-width: 768px) {
   .programacion {
     grid-template-columns: 1fr;
+  }
+  .MuiAccordion-root{
+    width: 100%;
+    padding: 0 !important;
   }
 }

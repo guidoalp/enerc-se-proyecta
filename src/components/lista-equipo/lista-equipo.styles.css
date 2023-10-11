@@ -7,12 +7,24 @@
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #0000fe;
 }
 
 .rol p {
   font-size: 1.3em;
   margin-bottom: 10px;
   margin-top: 0px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #0000fe;
+}
+.rol p::selection{
+  color: #e624a0;
+}
+.rol h3::selection{
+  color: #e624a0;
 }
 
 @media (max-width: 768px) {

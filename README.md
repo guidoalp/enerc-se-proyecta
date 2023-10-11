@@ -1,5 +1,5 @@
-# 2' ENERC Se Proyecta
-Sitio web para la segunda edición del festival "ENERC Se proyecta" en su versión online.
+# 3' ENERC Se Proyecta
+Sitio web para la tercera edición del festival "ENERC Se proyecta" en su versión online.
 
 Made with React + Material UI
 

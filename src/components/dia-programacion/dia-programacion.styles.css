@@ -1,9 +1,50 @@
 .dia {
   margin-left: 85px;
   padding-left: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  height: 15vh;
+}
+.dia::selection{
+  color: #e624a0;
 }
 
 
+.MuiAccordionSummary-content{
+  color: #e8e8e8;
+  text-shadow: 1px 1px 1px black;
+  line-height: 1.7rem;
+}
+
+.MuiAccordionDetails-root{
+  display: flex !important;
+  flex-direction: column !important;
+  padding-right: 5vw !important;
+  padding-left: 16px !important;
+}
+
+.dia-AMBA{
+  background-color: #e624a0 !important;
+}
+.dia-NOA{
+  background-color: #f0bdb5 !important;
+}
+.dia-Cuyo{
+  background-color: #fafae0 !important;
+}
+.dia-Patagonia{
+  background-color: #945e9f !important;
+}
+.dia-NEA{
+  background-color: #a3b0e6 !important;
+}
+.dia-Rosario{
+  background-color: #505388 !important;
+}
+.dia-Comodoro{
+  background-color: #ce86af !important;
+}
 
 .dia h2 {
   border-left: solid 8px;
@@ -11,9 +52,19 @@
   line-height: .8em;
 }
 
-@media (max-width: 768px) {
+.MuiAccordionDetails-root{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 425px) {
   .dia {
     margin-left: 10px;
     padding-left: 0px;
+  }
+
+  .MuiAccordionDetails-root{
+    padding-right: 2vw !important;
+    padding-left: 8px !important;
   }
 }

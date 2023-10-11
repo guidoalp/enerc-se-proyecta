@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 import './header-menu.styles.css';
 
@@ -30,7 +31,10 @@ export default function HeaderMenu() {
       <AppBar position="static" style={{ background: '#FFF' }}  elevation={0}>
         <Toolbar width="100%" style={{ justifyContent: 'flex-end' }}>
           <a href="https://instagram.com/enercseproyecta" rel="noopener noreferrer" target="_blank">
-            <InstagramIcon fontSize="large" style={{ color: '#000' }} align="right" />
+            <InstagramIcon fontSize="large" style={{ color: '#fff', marginRight: "10px" }} align="right" />
+          </a>
+          <a href="https://www.youtube.com/@cenerc7934" rel="noopener noreferrer" target="_blank">
+            <YouTubeIcon fontSize="large" style={{ color: '#fff' }} align="right" />
           </a>
         </Toolbar>
       </AppBar>
