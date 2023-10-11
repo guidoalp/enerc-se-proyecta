@@ -19,7 +19,6 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "predeploy": "npm run --openssl-legacy-provider build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build && react-snapshot",
     "test": "react-scripts test",
