@@ -161,7 +161,7 @@
     "tipo": "Corto + Largometraje + charla",
     "duración": "",
     "direccion": "CINE GAUMONT (Av. Rivadavia 1635)",
-    "lugar": "Sala 1 \"Leonardo Favio",
+    "lugar": "Sala 1 \"Leonardo Favio\"",
     "titulo_dia": "NUESTRO CINE. Desafíos de la comunidad audiovisual"
   },
   {
@@ -176,7 +176,7 @@
     "tipo": "Taller",
     "duración": "",
     "direccion": "ENERC (Moreno 1199)",
-    "lugar": "Aula 12 (subsuelo)",
+    "lugar": "Microcine",
     "titulo_dia": "GÉNERO Y TRABAJO EN LA INDUSTRIA AUDIOVISUAL"
   },
   {
@@ -199,8 +199,8 @@
     "sede": "AMBA",
     "fecha": "Sábado 14",
     "hora": "14:30",
-    "titulo": "(PERSONA)JE",
-    "autor": "Jiva Iacopino y Ana Luz Correa",
+    "titulo": "Bersa 9mm",
+    "autor": "Melina Torrez",
     "Invitado": "",
     "Coordina": "",
     "tipo": "Corto",
@@ -319,29 +319,14 @@
     "sede": "AMBA",
     "fecha": "Sábado 14",
     "hora": "19:30",
-    "titulo": "Terminal Young",
-    "autor": "Lucía Seles",
+    "titulo": "Terminal Young, de Lucía Seles + Charla con Dany Ortega y equipo de realización",
+    "autor": "",
     "Invitado": "",
     "Coordina": "",
-    "tipo": "Largometraje",
+    "tipo": "Largometraje + charla Q&A",
     "duración": "",
     "direccion": "Cine GAUMONT (Av. Rivadavia 1635)",
-    "lugar": "Sala 1 \"Leonardo Favio",
-    "titulo_dia": "GÉNERO Y TRABAJO EN LA INDUSTRIA AUDIOVISUAL"
-  },
-  {
-    "id": 25,
-    "sede": "AMBA",
-    "fecha": "Sábado 14",
-    "hora": "21:30",
-    "titulo": "Charla con equipo de realización",
-    "autor": "",
-    "Invitado": "Dany Ortega y equipo de realización",
-    "Coordina": "",
-    "tipo": "Charla Q&A",
-    "duración": "",
-    "direccion": "Cine GAUMONT (Av. Rivadavia 1635)",
-    "lugar": "Sala 1 \"Leonardo Favio",
+    "lugar": "Sala 1 \"Leonardo Favio\"",
     "titulo_dia": "GÉNERO Y TRABAJO EN LA INDUSTRIA AUDIOVISUAL"
   },
   {
@@ -356,7 +341,7 @@
     "tipo": "Taller",
     "duración": "",
     "direccion": "ENERC (Moreno 1199)",
-    "lugar": "Aula 12 (subsuelo)",
+    "lugar": "Microcine",
     "titulo_dia": "IDENTIDAD Y CULTURA"
   },
   {
@@ -371,7 +356,7 @@
     "tipo": "Cortos + charla Q&A",
     "duración": "",
     "direccion": "ENERC (Moreno 1199)",
-    "lugar": "Aula 12 (subsuelo)",
+    "lugar": "Microcine",
     "titulo_dia": "IDENTIDAD Y CULTURA"
   },
   {
@@ -386,7 +371,7 @@
     "tipo": "Corto",
     "duración": "",
     "direccion": "Cine GAUMONT (Av. Rivadavia 1635)",
-    "lugar": "Sala 1 \"Leonardo Favio",
+    "lugar": "Sala 1 \"Leonardo Favio\"",
     "titulo_dia": "IDENTIDAD Y CULTURA"
   },
   {
@@ -401,7 +386,7 @@
     "tipo": "Corto",
     "duración": "",
     "direccion": "Cine GAUMONT (Av. Rivadavia 1635)",
-    "lugar": "Sala 1 \"Leonardo Favio",
+    "lugar": "Sala 1 \"Leonardo Favio\"",
     "titulo_dia": "IDENTIDAD Y CULTURA"
   },
   {
@@ -409,14 +394,14 @@
     "sede": "AMBA",
     "fecha": "Domingo 15",
     "hora": "20:00",
-    "titulo": "Fobia\", de César Gonzales y Sofía Gala + Charla con César Gonzales y equipo de realización",
+    "titulo": "Fobia\", de César González y Sofía Gala + Charla con César González y equipo de realización",
     "autor": "",
     "Invitado": "",
     "Coordina": "",
-    "tipo": "Mediometrajes + charla Q&A",
+    "tipo": "Largometraje + charla Q&A",
     "duración": "",
     "direccion": "Cine GAUMONT (Av. Rivadavia 1635)",
-    "lugar": "Sala 1 \"Leonardo Favio",
+    "lugar": "Sala 1 \"Leonardo Favio\"",
     "titulo_dia": "IDENTIDAD Y CULTURA"
   },
   {
