@@ -20,7 +20,6 @@ class App extends Component {
           <meta name="description" content="Festival organizado integramente por alumnes de la Escuela Nacional de Experimentación y Realización Cinematográfica." />
           <link rel="icon" type="image/png" href={Favicon} sizes="16x16" />
         </Helmet>
-        <Header />
       </div>
     );
   }
